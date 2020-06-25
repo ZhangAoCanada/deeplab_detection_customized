@@ -146,7 +146,8 @@ def main(input_dir, input_prefix, sequences):
                     'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', \
                     'train', 'tv']
 
-    MODEL_NAME = 'xception_coco_voctrainaug'  # @param ['mobilenetv2_coco_voctrainaug', 'mobilenetv2_coco_voctrainval', 'xception_coco_voctrainaug', 'xception_coco_voctrainval']
+    # @param ['mobilenetv2_coco_voctrainaug', 'mobilenetv2_coco_voctrainval', 'xception_coco_voctrainaug', 'xception_coco_voctrainval', 'xception71_cityscapes']
+    MODEL_NAME = 'xception71_cityscapes'  
 
     _DOWNLOAD_URL_PREFIX = 'http://download.tensorflow.org/models/'
     _MODEL_URLS = {
@@ -158,6 +159,8 @@ def main(input_dir, input_prefix, sequences):
             'deeplabv3_pascal_train_aug_2018_01_04.tar.gz',
         'xception_coco_voctrainval':
             'deeplabv3_pascal_trainval_2018_01_04.tar.gz',
+        'xception71_cityscapes':
+            'deeplab_cityscapes_xception71_trainfine_2018_09_08.tar.gz',
     }
     _TARBALL_NAME = MODEL_NAME + '.tar.gz'
 
