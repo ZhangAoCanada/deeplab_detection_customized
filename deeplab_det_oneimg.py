@@ -146,7 +146,7 @@ def main(input_dir, input_prefix, sequences):
                     'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', \
                     'train', 'tv']
 
-    MODEL_NAME = 'mobilenetv2_coco_voctrainaug'  # @param ['mobilenetv2_coco_voctrainaug', 'mobilenetv2_coco_voctrainval', 'xception_coco_voctrainaug', 'xception_coco_voctrainval']
+    MODEL_NAME = 'xception_coco_voctrainaug'  # @param ['mobilenetv2_coco_voctrainaug', 'mobilenetv2_coco_voctrainval', 'xception_coco_voctrainaug', 'xception_coco_voctrainval']
 
     _DOWNLOAD_URL_PREFIX = 'http://download.tensorflow.org/models/'
     _MODEL_URLS = {
